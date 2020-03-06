@@ -25,7 +25,7 @@ const Home = ({ navigation, route }) => {
 
   useEffect(() => {
     handleFetchPalettes();
-  }, [handleFetchPalettes]);
+  }, []);
 
   const handleRefresh = useCallback(async () => {
     setIsRefreshing(true);
@@ -33,7 +33,7 @@ const Home = ({ navigation, route }) => {
     setTimeout(() => {
       setIsRefreshing(false);
     }, 1000);
-  }, [handleFetchPalettes]);
+  });
 
   useEffect(() => {
     if (newPalette) {
