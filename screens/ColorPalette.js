@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, FlatList, StyleSheet } from 'react-native';
+import { Text, StyleSheet, FlatList } from 'react-native';
 import ColorBox from '../components/ColorBox';
 
 const ColorPalette = ({ route }) => {
